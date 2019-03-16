@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Alien {
+public class Task {
 
 	@Id
 	private String name;
@@ -30,8 +30,6 @@ public class Alien {
 	}
 	@Override
 	public String toString() {
-		return " "+name + " " + fname + " " + lname+" ";
-	}
-	
-	
+		return " "+name+"\t\t" + fname + "\t\t " + lname+" ";
+	}	
 }
